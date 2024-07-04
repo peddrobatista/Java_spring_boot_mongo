@@ -1,5 +1,13 @@
 package com.peddrobatista.workshopmongo.repository;
 
-public interface UserRepository {
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import com.peddrobatista.workshopmongo.domain.User;
+
+@Repository
+public interface UserRepository extends MongoRepository<User, String>{
+	
+	
 
 }
